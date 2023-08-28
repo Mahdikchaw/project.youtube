@@ -16,7 +16,8 @@
   background-color: white;
   border-bottom-width: 1px ;
   border-bottom-style: solid ;
-  border-bottom-color: rgb(228, 219, 219);
+  border-bottom-color: rgb(228, 219, 219); 
+  z-index: 100;
 } 
 .left-section { 
   
@@ -28,10 +29,14 @@
   height:25px;
   margin-left: 24px;
   margin-right: 20px;
+  cursor: pointer;
+
 }
 
 .youtube-logo { 
   height: 20px;
+  cursor: pointer;
+
 }
 
 
@@ -42,6 +47,7 @@ margin-right: 35px;
 max-width: 500px; 
 display: flex;
 align-items: center;
+justify-content: center;
 } 
 .search-bar{ 
   flex: 1;
@@ -69,7 +75,59 @@ border-color: rgb(192,192, 192);
 margin-left: -1px;
 margin-right: 10px;
 
+}
+
+.search-button,
+.voice-button,
+.upload,
+.youtube-app,
+.notification-icon-container
+
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+
+.search-button .tooltip, 
+.voice-button .tooltip,
+.upload .tooltip,
+.youtube-app .tooltip,
+.notification-icon-container .tooltip
+
+{
+  position: absolute;
+  background-color: rgb(192, 176, 176);
+  color: white;
+  padding-top: 4px;
+padding-bottom: 4px ;
+padding-left: 8px;
+padding-right: 8px;
+border-radius: 2px;
+font-size: 12px;
+font-family: arial;
+bottom: -30px;
+opacity: 0;
+transition:0.15s;
+white-space: nowrap;
+
 } 
+
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload:hover .tooltip,
+.youtube-app:hover .tooltip,
+.notification-icon-container:hover .tooltip
+
+{
+  opacity: 1;
+}
+
+
 .search-icon {
   height: 25px;
   margin-top: 3px;
@@ -82,7 +140,6 @@ width: 40px;
 border-radius: 20px;
 border: none;
 background-color:rgb(245,245,245);
-
 }
 .voice-icon{
   height: 24px;
@@ -105,7 +162,26 @@ background-color:rgb(245,245,245);
 .notification-icon { 
   height: 24px;
 } 
+.notification-icon-container{ 
+  position: relative;
+}
+.notification-count{
+  font-family: arial;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: rgb(199, 25, 25);
+  color: white;
+  font-size: 13px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+}
 .current-user-picture{ 
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
+
 }
