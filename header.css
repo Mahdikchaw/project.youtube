@@ -1,10 +1,8 @@
-
-.search-bar{ 
-  width:100px;
+.search-bar {
+  width: 100px;
   display: block;
-
-} 
-.header{ 
+}
+.header {
   height: 55px;
   display: flex;
   flex-direction: row;
@@ -14,76 +12,67 @@
   left: 0;
   right: 0;
   background-color: white;
-  border-bottom-width: 1px ;
-  border-bottom-style: solid ;
-  border-bottom-color: rgb(228, 219, 219); 
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 219, 219);
   z-index: 100;
-} 
-.left-section { 
-  
+}
+.left-section {
   display: flex;
   align-items: center;
-
 }
-.hamburger-menu{
-  height:25px;
+.hamburger-menu {
+  height: 25px;
   margin-left: 24px;
   margin-right: 20px;
   cursor: pointer;
-
 }
 
-.youtube-logo { 
+.youtube-logo {
   height: 20px;
   cursor: pointer;
-
 }
 
-
-.middle-section{ 
-flex: 1; 
-margin-left: 70px;
-margin-right: 35px;
-max-width: 500px; 
-display: flex;
-align-items: center;
-justify-content: center;
-} 
-.search-bar{ 
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bar {
   flex: 1;
   height: 36px;
   padding-left: 10px;
   font-size: 16px;
   border-style: solid;
-  border-color: rgb(192,192, 192);
+  border-color: rgb(192, 192, 192);
   border-width: 1px;
   width: 0;
-
-} 
-.search-bar::placeholder{
+}
+.search-bar::placeholder {
   font-family: Arial;
   font-size: 16px;
 }
 
-.search-button { 
-height: 39px;
-width: 60px;
-background-color: rgb(240,240,240);
-border-width: 1px;
-border-style: solid;
-border-color: rgb(192,192, 192);
-margin-left: -1px;
-margin-right: 10px;
-
+.search-button {
+  height: 39px;
+  width: 60px;
+  background-color: rgb(240, 240, 240);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
 }
 
 .search-button,
 .voice-button,
 .upload,
 .youtube-app,
-.notification-icon-container
-
-{
+.notification-icon-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -91,61 +80,52 @@ margin-right: 10px;
   cursor: pointer;
 }
 
-
-
-.search-button .tooltip, 
+.search-button .tooltip,
 .voice-button .tooltip,
 .upload .tooltip,
 .youtube-app .tooltip,
-.notification-icon-container .tooltip
-
-{
+.notification-icon-container .tooltip {
   position: absolute;
   background-color: rgb(192, 176, 176);
   color: white;
   padding-top: 4px;
-padding-bottom: 4px ;
-padding-left: 8px;
-padding-right: 8px;
-border-radius: 2px;
-font-size: 12px;
-font-family: arial;
-bottom: -30px;
-opacity: 0;
-transition:0.15s;
-white-space: nowrap;
-
-} 
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: arial;
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.15s;
+  white-space: nowrap;
+}
 
 .search-button:hover .tooltip,
 .voice-button:hover .tooltip,
 .upload:hover .tooltip,
 .youtube-app:hover .tooltip,
-.notification-icon-container:hover .tooltip
-
-{
+.notification-icon-container:hover .tooltip {
   opacity: 1;
 }
-
 
 .search-icon {
   height: 25px;
   margin-top: 3px;
-
 }
 
-.voice-button{ 
-height: 40px;
-width: 40px;
-border-radius: 20px;
-border: none;
-background-color:rgb(245,245,245);
+.voice-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(245, 245, 245);
 }
-.voice-icon{
+.voice-icon {
   height: 24px;
   margin-top: 3px;
 }
-.right-section { 
+.right-section {
   width: 180px;
   display: flex;
   align-items: center;
@@ -153,19 +133,19 @@ background-color:rgb(245,245,245);
   margin-right: 18px;
   flex-shrink: 0;
 }
-.upload-icon { 
+.upload-icon {
   height: 24px;
 }
-.youtube-app-icon{ 
+.youtube-app-icon {
   height: 24px;
 }
-.notification-icon { 
+.notification-icon {
   height: 24px;
-} 
-.notification-icon-container{ 
+}
+.notification-icon-container {
   position: relative;
 }
-.notification-count{
+.notification-count {
   font-family: arial;
   position: absolute;
   top: -5px;
@@ -179,9 +159,8 @@ background-color:rgb(245,245,245);
   padding-bottom: 2px;
   border-radius: 10px;
 }
-.current-user-picture{ 
+.current-user-picture {
   height: 32px;
   border-radius: 16px;
   cursor: pointer;
-
 }
